@@ -1,20 +1,11 @@
 #' Upper Level Set Spatial Scan Test
 #' 
-#' \code{uls.test} performs Upper Level Set (ULS) spatian scan test of Patil and Taillie (2004).
+#' \code{uls.test} performs the Upper Level Set (ULS) spatial scan test of Patil and Taillie (2004).
 #' 
 #' The test is performed using the spatial scan test based on the Poisson test statistic and a fixed number of cases.  The windows are based on the Upper Level Sets proposed by Patil and Taillie (2004).  The clusters returned are non-overlapping, ordered from most significant to least significant.  The first cluster is the most likely to be a cluster.  If no significant clusters are found, then the most likely cluster is returned (along with a warning).
 #' 
-#' @param coords An \eqn{n \times 2} matrix of centroid coordinates for the regions.
-#' @param cases The number of cases in each region.
-#' @param pop The population size of each region.
-#' @param w The binary spatial adjacency matrix.
-#' @param ex The expected number of cases for each region.  The default is calculated under the constant risk hypothesis.  
-#' @param nsim The number of simulations from which to compute p-value.
-#' @param nreport The frequency with which to report simulation progress.  The default is \code{nsim+ 1}, meaning no progress will be displayed.
-#' @param ubpop The upperbound of the proportion of the total population to consider for a cluster.
-#' @param alpha The significance level to determine whether a cluster is signficant.  Default is 0.05.
-#' @param lonlat If lonlat is TRUE, then the great circle distance is used to calculate the intercentroid distance.  The default is FALSE, which specifies that Euclidean distance should be used.
-#' @param parallel A logical indicating whether the test should be parallelized using the \code{parallel::mclapply function}.  Default is TRUE.  If TRUE, no progress will be reported.
+#' @param w A binary spatial adjacency matrix.
+#' @inheritParams scan.test
 #'
 #' @return Returns a list of length two of class scan. The first element (clusters) is a list containing the significant, non-ovlappering clusters, and has the the following components: 
 #' \item{locids}{The location ids of regions in a significant cluster.}
@@ -27,6 +18,9 @@
 #' \item{pvalue}{The pvalue of the test statistic associated with the cluster window.}
 #' The second element of the list is the centroid coordinates.  This is needed for plotting purposes.
 #' @author Joshua French
+#' @seealso \code{\link{scan.stat}}, \code{\link{plot.scan}}, 
+#' \code{\link{scan.test}}, \code{\link{flex.test}}, 
+#' \code{\link{dmst.test}}, \code{\link{bn.test}} 
 #' @importFrom parallel mclapply
 #' @importFrom fields rdist.earth
 #' @importFrom smacpod noc
@@ -159,6 +153,7 @@ uls.test = function (coords, cases, pop, w, ex = sum(cases)/sum(pop)*pop,
     clusters[[i]]$rr = sig_rr[i]
     clusters[[i]]$loglikrat = sig_tstat[i]
     clusters[[i]]$pvalue = sig_p[i]
+    clusters[[i]]$w = w[sig_regions[[i]], sig_regions[[i]]]
   }
   outlist = list(clusters = clusters, coords = coords)
   class(outlist) = "scan"
