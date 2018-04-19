@@ -1,6 +1,7 @@
-b5fd58012796c57fc0272ecc6c4cdbc9 *DESCRIPTION
+1eae94083a421dacb314ba2b6e333e91 *DESCRIPTION
 6a088906faf022fc2f5aeed715fa629f *NAMESPACE
-cc8c328f287d38b10cc35886a9bcd37d *R/bn.test.R
+061dbc385e8107162df922dcbed1d79b *NEWS
+eb1dfa65e7d64ec86ed941379cca9f68 *R/bn.test.R
 94757cbc3dab91bcdaa309f7f27db21b *R/casewin.R
 85f54e0c89f916691ce7728767731288 *R/color.clusters.R
 5f87772e3be9a076d04df6b85471249a *R/dmst.test.R
@@ -22,13 +23,13 @@ a4896e98e26955078cda8ab8450b55d7 *R/plot.tango.R
 805d7d27c3cd83d87f894142b834e9e5 *R/scan.test.R
 ddbd38e1b21d4e082a69b596f4cfa1ae *R/scan.zones.R
 5dc3e725dbd54c2c84457ab6a75b4f73 *R/tango.stat.R
-0b0853bfa7bfd81aa3e7a81232335bac *R/tango.test.R
+73cef1ed6f52dd791d3da72cbea295b1 *R/tango.test.R
 10191c1ee376e713caa1d81657680b2b *R/uls.test.R
 6ef7b1013afbc3bf25fdac5d328a8fa5 *R/uls.zones.R
 50dfe003d18a0d9c135b07c4874fb4c1 *data/nydf.rda
 b8ffd8a4f7175ed42d39642e990fa43c *data/nypoly.rda
 2d155f0515fd96d139f1b3be3276c34d *data/nyw.rda
-3a7861ddc82ff2c7b15c63065b7345d9 *man/bn.test.Rd
+c38abc8dc8b5203580906a7b212ab623 *man/bn.test.Rd
 e57c89e36cbd897a45a92c8a5e3e8be9 *man/casewin.Rd
 b103429e1f00ebe03a38a26efeb6dd74 *man/color.clusters.Rd
 80028ae114ee082a93682d5105666ca0 *man/dmst.test.Rd
@@ -64,7 +65,7 @@ f6b90604fd4da111afc64a3c7170e3cf *tests/flex_nycases.txt
 ea5551d1280299924d251aa67590a31c *tests/satscannyoutpoisson.txt
 dcd062a8b3bd479a73148a13b6a97dcf *tests/satscannypop.txt
 06434a1e51bd2625f4404127e2680f7a *tests/test-all.R
-99847fc93b354cb91bbee0c831660ad6 *tests/testthat/test-bn.test.R
+696a154803269d3e4e113ddfcc0a61b1 *tests/testthat/test-bn.test.R
 c3a6103794cbb1beca6a6269eb97300f *tests/testthat/test-flex.test.R
 1718d6b660c66a6da712d4c21f453b1d *tests/testthat/test-scan.test.R
 ac5555817ef5257bfde14b5db271f08f *tests/testthat/test-tango.test.R
