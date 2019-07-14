@@ -9,7 +9,8 @@ tango.stat(cases, pop, w)
 \arguments{
 \item{cases}{The number of cases observed in each region.}
 
-\item{pop}{The population size associated with each region.}
+\item{pop}{The population size associated with each
+region.}
 
 \item{w}{An \eqn{n \times n} weights matrix.}
 }
@@ -20,13 +21,13 @@ autocorrelation component (\code{sa}).
 }
 \description{
 \code{tango.stat} computes Tango's index (Tango, 1995), including
-both the goodness-of-fit and spatial autocorrelation 
+both the goodness-of-fit and spatial autocorrelation
 components.  See Waller and Gotway (2005).
 }
 \examples{
 data(nydf)
 coords = as.matrix(nydf[,c("longitude", "latitude")])
-w = dweights(coords, kappa = 1, type = "tango")
+w = dweights(coords, kappa = 1, type = "tango", longlat = TRUE)
 tango.stat(nydf$cases, nydf$pop, w)
 }
 \references{

@@ -2,52 +2,57 @@
 % Please edit documentation in R/flex.test.R
 \name{flex.test}
 \alias{flex.test}
-\title{Flexibly Shaped Spatial Scan Test}
+\title{Flexibly-shaped Spatial Scan Test}
 \usage{
-flex.test(coords, cases, pop, w, k = 10, ex = sum(cases)/sum(pop) * pop,
-  type = "poisson", nsim = 499, alpha = 0.1, nreport = nsim + 1,
-  lonlat = FALSE, parallel = TRUE)
+flex.test(coords, cases, pop, w, k = 10, ex = sum(cases)/sum(pop) *
+  pop, type = "poisson", nsim = 499, alpha = 0.1, longlat = FALSE,
+  cl = NULL)
 }
 \arguments{
-\item{coords}{An \eqn{n \times 2} matrix of centroid coordinates for the regions.}
+\item{coords}{An \eqn{n \times 2} matrix of centroid
+coordinates for the regions.}
 
 \item{cases}{The number of cases observed in each region.}
 
-\item{pop}{The population size associated with each region.}
+\item{pop}{The population size associated with each
+region.}
 
-\item{w}{A binary spatial adjacency matrix.}
+\item{w}{A binary spatial adjacency matrix for the regions.}
 
 \item{k}{An integer indicating the maximum number of regions to inclue in a potential cluster.  Default is 10}
 
-\item{ex}{The expected number of cases for each region.  The default is calculated under the constant risk hypothesis.}
+\item{ex}{The expected number of cases for each region.
+The default is calculated under the constant risk
+hypothesis.}
 
-\item{type}{The type of scan statistic to implement.  Default is \code{"poisson"}.  Only \code{"poisson"} is currently implemented.}
+\item{type}{The type of scan statistic to implement. The
+default is \code{"poisson"}, with the other choice
+being \code{"binomial"}.}
 
-\item{nsim}{The number of simulations from which to compute the p-value.}
+\item{nsim}{The number of simulations from which to
+compute the p-value.}
 
-\item{alpha}{The significance level to determine whether a cluster is signficant.  Default is \code{0.10}.}
+\item{alpha}{The significance level to determine whether
+a cluster is signficant.  Default is 0.10.}
 
-\item{nreport}{The frequency with which to report simulation progress.  The default is \code{nsim+ 1}, meaning no progress will be displayed.}
+\item{longlat}{The default is \code{FALSE}, which
+specifies that Euclidean distance should be used.If
+\code{longlat} is \code{TRUE}, then the great circle
+distance is used to calculate the intercentroid
+distance.}
 
-\item{lonlat}{The default is \code{FALSE}, which specifies that Euclidean distance should be used.If \code{lonlat} is \code{TRUE}, then the great circle distance is used to calculate the intercentroid distance.}
-
-\item{parallel}{A logical indicating whether the test should be parallelized using the \code{parallel::mclapply function}.  Default is \code{TRUE}.  If \code{TRUE}, no progress will be reported.}
+\item{cl}{
+A cluster object created by \code{\link[parallel]{makeCluster}},
+or an integer to indicate number of child-processes
+(integer values are ignored on Windows) for parallel evaluations
+(see Details on performance).
+}
 }
 \value{
-Returns a list of length two of class scan. The first element (clusters) is a list containing the significant, non-ovlappering clusters, and has the the following components: 
-\item{coords}{The centroid of the significant clusters.}
-\item{r}{The radius of the window of the clusters.}
-\item{pop}{The total population in the cluser window.}
-\item{cases}{The observed number of cases in the cluster window.}
-\item{expected}{The expected number of cases in the cluster window.}
-\item{smr}{Standarized mortaility ratio (observed/expected) in the cluster window.}
-\item{rr}{Relative risk in the cluster window.}
-\item{loglikrat}{The loglikelihood ratio for the cluster window (i.e., the log of the test statistic).}
-\item{pvalue}{The pvalue of the test statistic associated with the cluster window.}
-The second element of the list is the centroid coordinates.  This is needed for plotting purposes.
+Returns a list of length two of class scan. The first element (clusters) is a list containing the significant, non-ovlappering clusters, and has the the following components:
 }
 \description{
-\code{flex.test} performs the flexibly shaped spatial scan test of Tango and Takahashi (2005).
+\code{flex.test} performs the flexibly-shaped scan test of Tango and Takahashi (2005).
 }
 \details{
 The test is performed using the spatial scan test based on the Poisson test statistic and a fixed number of cases.  The first cluster is the most likely to be a cluster.  If no significant clusters are found, then the most likely cluster is returned (along with a warning).
@@ -57,10 +62,10 @@ data(nydf)
 data(nyw)
 coords = with(nydf, cbind(longitude, latitude))
 out = flex.test(coords = coords, cases = floor(nydf$cases),
-                w = nyw, k = 3,  
-                pop = nydf$pop, nsim = 49, 
-                alpha = 0.12, lonlat = TRUE)
-                
+                w = nyw, k = 3,
+                pop = nydf$pop, nsim = 49,
+                alpha = 0.12, longlat = TRUE)
+
 data(nypoly)
 library(sp)
 plot(nypoly, col = color.clusters(out))
@@ -69,8 +74,8 @@ plot(nypoly, col = color.clusters(out))
 Tango, T., & Takahashi, K. (2005). A flexibly shaped spatial scan statistic for detecting clusters. International journal of health geographics, 4(1), 11.  Kulldorff, M. (1997) A spatial scan statistic. Communications in Statistics -- Theory and Methods 26, 1481-1496.
 }
 \seealso{
-\code{\link{scan.stat}}, \code{\link{plot.scan}}, 
-\code{\link{scan.test}}, \code{\link{uls.test}}, 
+\code{\link{scan.stat}}, \code{\link{plot.scan}},
+\code{\link{scan.test}}, \code{\link{uls.test}},
 \code{\link{dmst.test}}, \code{\link{bn.test}}
 }
 \author{

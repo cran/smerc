@@ -4,30 +4,30 @@
 \alias{plot.tango}
 \title{Plots an object of class \code{tango}.}
 \usage{
-\method{plot}{tango}(x, ..., obs.list = list(pch = 20), sim.list = list(pch
-  = 2))
+\method{plot}{tango}(x, ..., obs.list = list(pch = 20),
+  sim.list = list(pch = 2))
 }
 \arguments{
 \item{x}{An object of class \code{tango} to be plotted.}
 
 \item{...}{Additional graphical parameters passed to \code{plot} function.}
 
-\item{obs.list}{A list containing arguments for the 
+\item{obs.list}{A list containing arguments for the
 \code{\link[graphics]{points}} function, which is used to
-plot the \code{gof} and \code{sa} components, 
+plot the \code{gof} and \code{sa} components,
 when appropriate.}
 
-\item{sim.list}{A list containing arguments for the 
+\item{sim.list}{A list containing arguments for the
 \code{\link[graphics]{points}} function, which is used to
-plot the \code{gof.sim} and \code{sa.sim} components, 
+plot the \code{gof.sim} and \code{sa.sim} components,
 when appropriate.}
 }
 \description{
 Plots results of \code{\link{tango.test}}.  If Monte
 Carlo simulation was not used to produce \code{x}, then a  a density plot of
 the (approximate) null distribution of \code{tstat.chisq} is produced, along
-with a vertical line for the observed \code{tstat}.  
-If a Monte Carlo test was used to produce \code{x}, then a scatterplot of 
+with a vertical line for the observed \code{tstat}.
+If a Monte Carlo test was used to produce \code{x}, then a scatterplot of
 the \code{gof.sim} versus \code{sa.sim} is compared to the observed values
 \code{gof} and \code{sa}, respectively.
 }
