@@ -1,6 +1,6 @@
-268f2384308e75c47889355b631171bd *DESCRIPTION
+4cceb33205df66a50794dd9fd8741f29 *DESCRIPTION
 9d5088fa795b6cfb97274eebfd1edafc *NAMESPACE
-061dbc385e8107162df922dcbed1d79b *NEWS
+8525ecf0ecf4a5b8fb1f283b2ceed61f *NEWS
 6130792a84aa805471e5b3a03893ff1a *R/arg_check_dmst_zones.R
 0bd039ea5c330360d6dd2345e10b2fee *R/arg_check_scan_test.R
 5a9949e9ac653964185aaffcfcf2ef6a *R/arg_check_scan_zones.R
@@ -30,7 +30,7 @@ c341cd6a44ebf4c391e0a29227db3991 *R/fast.sim.R
 da5843e67abe6b778a28ed811395bf1a *R/fast.test.R
 6d492111eb22734e4c6c98c9e40e8050 *R/fast.zones.R
 cd65ec54061d03f5cfc18d23c0408474 *R/flex.sim.R
-a5c1317ae8fe05f52d02b41046900c05 *R/flex.test.R
+1873b345d1429e401f27007938e66052 *R/flex.test.R
 8965a5d8a0ccbdb8097a27593d1788e4 *R/flex.zones.R
 837fa9876b8b11fe7b2d771303fb057f *R/knn.R
 cc55a556f5c816895b49145c789e3129 *R/mc.pvalue.R
@@ -105,7 +105,7 @@ e0515f079db546a0b9160ecd629a3a05 *man/elliptic.test.Rd
 b2ec791729351cccb77a8ddefb7bbc51 *man/fast.test.Rd
 1a2d893ec980f3dc7a7907ccce5d3899 *man/fast.zones.Rd
 9a7e12ebdb2703de8bd99247e1233fc0 *man/flex.sim.Rd
-b8e8b72fa882c2d95b68bd6332dbb133 *man/flex.test.Rd
+e0a77a1fbf2c967954fa97d0cc149cf2 *man/flex.test.Rd
 b974d440aeeab9062c585594f701aa43 *man/flex.zones.Rd
 b6e3d0ef1cb18fa2dd66b459f2ac3406 *man/knn.Rd
 0644b80bf474b8d1781c8497ac94c7e8 *man/mc.pvalue.Rd
