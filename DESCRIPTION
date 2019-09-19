@@ -1,7 +1,7 @@
 Package: smerc
 Type: Package
 Title: Statistical Methods for Regional Counts
-Version: 1.0.1
+Version: 1.1
 Author: Joshua French
 Maintainer: Joshua French <joshua.french@ucdenver.edu>
 Description: Implements statistical methods for analyzing the counts of areal data,
@@ -13,6 +13,6 @@ Suggests: lintr, testthat, SpatialEpi
 Encoding: UTF-8
 RoxygenNote: 6.1.1
 NeedsCompilation: no
-Packaged: 2019-07-15 19:57:37 UTC; joshu
+Packaged: 2019-09-18 23:42:33 UTC; joshu
 Repository: CRAN
-Date/Publication: 2019-07-15 22:00:03 UTC
+Date/Publication: 2019-09-19 09:00:02 UTC
