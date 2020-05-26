@@ -7,10 +7,10 @@
 zones.sum(zones, y)
 }
 \arguments{
-\item{zones}{A list of nearest neighbors in the format produced by \code{\link{scan.zones}}.}
+\item{zones}{A list of nearest neighbors in the format
+produced by \code{\link{scan.zones}}.}
 
-\item{y}{A numeric vector which contains to values to be
-summed over.}
+\item{y}{A numeric vector of values to be summed over.}
 }
 \value{
 A numeric vector.
