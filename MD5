@@ -1,8 +1,8 @@
-95ee90886e67e2c8efb6e0440976a853 *DESCRIPTION
+5acde481ce0253cb12e50513b59a4a01 *DESCRIPTION
 c11846159cc0ddb1f9cf51b5c43342e3 *NAMESPACE
 9a57aec4521e168ada9d27734aab2bd2 *NEWS
 c78462b931843457925f69ab7b6682c1 *R/RcppExports.R
-14837099917395cfa0ce02f0eced1ce3 *R/arg_check_functions.R
+70662fa278c5bdcac2dee9799349b918 *R/arg_check_functions.R
 8734ce64a60184e66c5632730a66b4a3 *R/bn.test.R
 e433f41de2530f7841f6f03b94fdbf2f *R/bn.zones.R
 9a859690c25f7c00df6975932fcc0c06 *R/cepp.sim.R
@@ -79,13 +79,13 @@ c3c473d8cbfb4a665288e7074cce836c *R/tango.test.R
 11f22e6f74e96b817df71be2db8183a8 *R/uls.test.R
 0f8d5ee18180ab661fb39536b5ebf48f *R/uls.zones.R
 c18f82915558edc0263060b5ceb5b743 *R/zones.sum.R
-85a91cb321b2ad5968f2d3cc2e7a0cab *build/vignette.rds
+65e34f550b28116400e1176abc339bd6 *build/vignette.rds
 50dfe003d18a0d9c135b07c4874fb4c1 *data/nydf.rda
 b204e347d0dc7f674e88bd4b8392e190 *data/nypoly.rda
 316ab9d9fc998a4a671660dffcdae251 *data/nyw.rda
 325f743c9abca91624e5bd4e4d26797f *inst/doc/smerc_demo.R
 1717bd49671924f2363989cd4f3fc993 *inst/doc/smerc_demo.Rmd
-08e78278cb650d9193301f5f56adbf54 *inst/doc/smerc_demo.html
+e44bdc8923d93a658abe31ff0c5a258a *inst/doc/smerc_demo.html
 2db0de8f456122b326706db69a400e3d *inst/testdata-raw/create_bn_test_ref_rda.R
 fc963f3e5d8c7f9f69ad7a5d6af6d700 *inst/testdata-raw/create_cepp_test_ref_rda.R
 cdaf161109cc51e2398e2a43084caef5 *inst/testdata-raw/create_flex_zones_ref_rda.R
