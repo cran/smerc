@@ -1,8 +1,8 @@
-5acde481ce0253cb12e50513b59a4a01 *DESCRIPTION
-c11846159cc0ddb1f9cf51b5c43342e3 *NAMESPACE
-9a57aec4521e168ada9d27734aab2bd2 *NEWS
+59e370e0ea0a71b21babccfcc094e81d *DESCRIPTION
+0efc43f111b632ce8ef500f171f78f84 *NAMESPACE
+aa7f3f8e0428a73099b09df28732fcf5 *NEWS
 c78462b931843457925f69ab7b6682c1 *R/RcppExports.R
-70662fa278c5bdcac2dee9799349b918 *R/arg_check_functions.R
+eb8a3d754b30121b0274aeddfe2e42c6 *R/arg_check_functions.R
 8734ce64a60184e66c5632730a66b4a3 *R/bn.test.R
 e433f41de2530f7841f6f03b94fdbf2f *R/bn.zones.R
 9a859690c25f7c00df6975932fcc0c06 *R/cepp.sim.R
@@ -22,6 +22,7 @@ ba285ac6a81c3521c7b1e6f417cf472b *R/dmst.zones.R
 1f7294c276c3e92ca1ba63ddad5dbdfa *R/edmst.sim.R
 e3830ce86a430b9839ea5254f3174933 *R/edmst.test.R
 6a72bb6c1a0584895aaf0a0532bc1265 *R/edmst.zones.R
+fe8ccb5bceb5e5bec1bbdcd04fb23b3e *R/elbow_point.R
 7c546409b3050d127a5d4c5426e4595a *R/elliptic.nn.R
 d888fbb833e5be8f23884ddc10f4a4c4 *R/elliptic.sim.R
 3a482f2ca45e66df90490bb8469e8f13 *R/elliptic.test.R
@@ -53,6 +54,9 @@ ced292805a6ad84f55f7493c1b099203 *R/nn.cumsum.R
 840689418d03b6413f21f343389dbead *R/nydf.R
 fb9a224cda430485c2daf5437313f078 *R/nypoly.R
 b57ebe1c8bfc4e54985700bdbbbcbac2 *R/nyw.R
+a2009e97b30f069466cafd0c0835d72a *R/optimal_ubpop-plot.R
+3897b4f5cd82238a02294477a834b032 *R/optimal_ubpop-print.R
+34526de65646cf631f83f60fd3aead91 *R/optimal_ubpop.R
 a983f93140f55534d42e051641c91378 *R/preamble.R
 73d27fec7bacf4ff0539b7f5a97fdb66 *R/rflex.midp.R
 41aab3381d54f440ba92dae3b69bf883 *R/rflex.sim.R
@@ -64,6 +68,8 @@ a983f93140f55534d42e051641c91378 *R/preamble.R
 87ad8af8f943a3188759ba37ac8ec236 *R/scan.test.R
 9ca9a808b0c5729125e4ce344d00f3cf *R/scan.zones.R
 845702414d092acd8b2b2960ab5073f9 *R/scan_stat.R
+5fdd3759887dc6124d5e4cf588d97bc7 *R/seq_scan_sim.R
+873e7dd94408e3ae35935935a6538f29 *R/seq_scan_test.R
 197e0663265a6b940f34d2ef331f39d3 *R/sig_noc.R
 d0186f66eef4ac1f66ad59f542a38f09 *R/smerc-package.R
 8a3088eeffe9c441b76c1880d7f970da *R/smerc_cluster-plot.R
@@ -85,7 +91,7 @@ b204e347d0dc7f674e88bd4b8392e190 *data/nypoly.rda
 316ab9d9fc998a4a671660dffcdae251 *data/nyw.rda
 325f743c9abca91624e5bd4e4d26797f *inst/doc/smerc_demo.R
 1717bd49671924f2363989cd4f3fc993 *inst/doc/smerc_demo.Rmd
-e44bdc8923d93a658abe31ff0c5a258a *inst/doc/smerc_demo.html
+f601cf876d2e49bdcb200bd18bf12616 *inst/doc/smerc_demo.html
 2db0de8f456122b326706db69a400e3d *inst/testdata-raw/create_bn_test_ref_rda.R
 fc963f3e5d8c7f9f69ad7a5d6af6d700 *inst/testdata-raw/create_cepp_test_ref_rda.R
 cdaf161109cc51e2398e2a43084caef5 *inst/testdata-raw/create_flex_zones_ref_rda.R
@@ -101,6 +107,7 @@ b88a1e7d40dc0cdd5069a7c216187364 *inst/testdata/dmst_test_ref.rda
 8f8df58376b1de449cc88220f26c859e *inst/testdata/flex_test_ref.rda
 6a15a738a7f8887c7153c42f165db8a5 *inst/testdata/mlf_test_ref.rda
 6698a83cd72f8c9abd103c41c6bc602b *inst/testdata/mlink_test_ref.rda
+95681be371da8ebf35258963084aa50f *inst/testdata/pruned_seq.rda
 1bbaebb338c7f60abf484fd472cf594b *inst/testdata/rflex_test_ref.rda
 f6a376abb3430865836322ab84062d82 *inst/testdata/uls_test_ref.rda
 e8c57aeb5f6fae9fff539405b871e0f7 *man/all_shape_dists.Rd
@@ -124,6 +131,7 @@ ad53c4038f83f0b455170d4d457b807b *man/dmst.zones.Rd
 3e0b251ec4248de1d09db215ac7757be *man/edmst.sim.Rd
 0536cefddd89d6f6553bd4e016baa521 *man/edmst.test.Rd
 7690116c959b73042ab9314f48064a2e *man/edmst.zones.Rd
+64b0338f514eb06bdde17bd318a5f6e5 *man/elbow_point.Rd
 ce27c3676dfd51f035c4a6796a16b27a *man/elliptic.nn.Rd
 dea37a20e9ccc023f38d5849f3b7d2e0 *man/elliptic.sim.Rd
 5d07fcd80a8d0c446baa55918101fbc2 *man/elliptic.test.Rd
@@ -155,10 +163,13 @@ fbddeb36f7fd371d0cc5b1e12d39e5d7 *man/nndist.Rd
 add7a51469cfc5930ce244a86c0c3d1c *man/nydf.Rd
 42890692ac309394f4fe576aa9672647 *man/nypoly.Rd
 403ce393b41f11f63de63a9996c85599 *man/nyw.Rd
+b48afec4916bb20f3ff916eee87b5f93 *man/optimal_ubpop.Rd
 8e12658467bd2f60fa47ce0028e6317a *man/plot.smerc_cluster.Rd
+4cd02c1f7b982e2e76bf4a6090a4efad *man/plot.smerc_optimal_ubpop.Rd
 9085eec0fb6db9f9586f5312b8fb9a86 *man/plot.tango.Rd
 2f89eacf6bc9c32bec1a0d5be889ca44 *man/prep.mst.Rd
 706c2edd8224525f467cac7538bf0103 *man/print.smerc_cluster.Rd
+7441faf2436004ecc1bef857e876ae54 *man/print.smerc_optimal_ubpop.Rd
 cd95901e4f41fa5c1b1fbfc6d33ed848 *man/print.tango.Rd
 9714b7542957d92b893d6aac9669ddf2 *man/rflex.midp.Rd
 89c6530bda650b2637534bf9c7913290 *man/rflex.sim.Rd
@@ -171,6 +182,8 @@ eb2de5f4f2755129fa60b00139b63da3 *man/scan.nn.Rd
 9a2532565cd6b6cdb88efd5c1f60e532 *man/scan.test.Rd
 6a3061ded1e495787f7e55c0f9e4dda7 *man/scan.zones.Rd
 de3538ca1d5479bf36084a92abf2ced8 *man/scan_stat.Rd
+7906a7586014d13cc71229e9677bfd39 *man/seq_scan_sim.Rd
+b31bbb485bc99b054b304956ea95bc3f *man/seq_scan_test.Rd
 37fa08ed3fca42621b0fc5fb90cab435 *man/sig_noc.Rd
 3fa444907206bf9dfea2434a380c69b2 *man/smerc.Rd
 78406bf6b4f74a344023c182092f0a1d *man/smerc_cluster.Rd
@@ -242,6 +255,7 @@ a5efb89fd6784b3d300d332032c2d6e7 *tests/testthat/test-flex.test-ref.R
 0262586ebdcbd1c3ddd2486bb15b0cab *tests/testthat/test-lints.R
 0a79b95f2da4df1ee3c389421e4caf47 *tests/testthat/test-mlf.test-ref.R
 93a33db32e8108e336fe0a8bf97c3425 *tests/testthat/test-mlink.test-ref.R
+2be32fe023b72908ed855e39e3db1211 *tests/testthat/test-optimal_ubpop.R
 f24f5c667f5b074c62cede68a3c0b1d2 *tests/testthat/test-rflex.test-binomial.R
 f15eff548f7cd54a2de2cc50b36e9663 *tests/testthat/test-rflex.test-poisson.R
 66c53f586d443f9fc946911b9c21e5d2 *tests/testthat/test-rflex.test-ref.R
@@ -249,6 +263,7 @@ f15eff548f7cd54a2de2cc50b36e9663 *tests/testthat/test-rflex.test-poisson.R
 f4e17651ca209e21ee912e1c6187deb3 *tests/testthat/test-scan.test.R
 b79a0268b85d78b6f0812e0db0963b58 *tests/testthat/test-scan_sim.R
 88714eef516ce215f4c2f63fd0634454 *tests/testthat/test-scan_stat.R
+15580df4a7b46bd06e9d941dbfd40487 *tests/testthat/test-seq_scan_test.R
 62929f45ec0ee75a7350f38ee666cde6 *tests/testthat/test-tango.test.R
 d5d35cb228ceb074bf6d19f65e3b55f4 *tests/testthat/test-uls.test-ref.R
 335fde69a03d48b57825a588a9e8aa29 *tests/testthat/test-uls_zones.R
