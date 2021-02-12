@@ -1,7 +1,7 @@
 Package: smerc
 Type: Package
 Title: Statistical Methods for Regional Counts
-Version: 1.4
+Version: 1.4.2
 Authors@R: 
     c(person(given = "Joshua",
             family = "French",
@@ -26,8 +26,8 @@ RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 LinkingTo: Rcpp, RcppProgress
 NeedsCompilation: yes
-Packaged: 2021-02-05 22:06:31 UTC; joshu
+Packaged: 2021-02-10 19:02:52 UTC; joshu
 Author: Joshua French [aut, cre] (<https://orcid.org/0000-0002-9708-3353>),
   Mohammad Meysami [ctb] (<https://orcid.org/0000-0002-3322-5244>)
 Repository: CRAN
-Date/Publication: 2021-02-06 05:50:02 UTC
+Date/Publication: 2021-02-13 00:10:02 UTC

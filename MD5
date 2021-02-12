@@ -1,4 +1,4 @@
-59e370e0ea0a71b21babccfcc094e81d *DESCRIPTION
+6ac48a73e9a73b667d97a89c8b8bd190 *DESCRIPTION
 0efc43f111b632ce8ef500f171f78f84 *NAMESPACE
 aa7f3f8e0428a73099b09df28732fcf5 *NEWS
 c78462b931843457925f69ab7b6682c1 *R/RcppExports.R
@@ -56,7 +56,7 @@ fb9a224cda430485c2daf5437313f078 *R/nypoly.R
 b57ebe1c8bfc4e54985700bdbbbcbac2 *R/nyw.R
 a2009e97b30f069466cafd0c0835d72a *R/optimal_ubpop-plot.R
 3897b4f5cd82238a02294477a834b032 *R/optimal_ubpop-print.R
-34526de65646cf631f83f60fd3aead91 *R/optimal_ubpop.R
+13a1722137bcc659a7e13fbe1b67b779 *R/optimal_ubpop.R
 a983f93140f55534d42e051641c91378 *R/preamble.R
 73d27fec7bacf4ff0539b7f5a97fdb66 *R/rflex.midp.R
 41aab3381d54f440ba92dae3b69bf883 *R/rflex.sim.R
@@ -91,7 +91,9 @@ b204e347d0dc7f674e88bd4b8392e190 *data/nypoly.rda
 316ab9d9fc998a4a671660dffcdae251 *data/nyw.rda
 325f743c9abca91624e5bd4e4d26797f *inst/doc/smerc_demo.R
 1717bd49671924f2363989cd4f3fc993 *inst/doc/smerc_demo.Rmd
-f601cf876d2e49bdcb200bd18bf12616 *inst/doc/smerc_demo.html
+dc3c00236a72e35f4aa9484fc872457e *inst/doc/smerc_demo.html
+15ceee73fe1f8d91e11b7f6e3081b3cf *inst/randomTests/test-optimal_ubpop-randomTests.R
+c6a88b9e527405e719db077d089c736f *inst/randomTests/test-seq_scan_test-randomTests.R
 2db0de8f456122b326706db69a400e3d *inst/testdata-raw/create_bn_test_ref_rda.R
 fc963f3e5d8c7f9f69ad7a5d6af6d700 *inst/testdata-raw/create_cepp_test_ref_rda.R
 cdaf161109cc51e2398e2a43084caef5 *inst/testdata-raw/create_flex_zones_ref_rda.R
@@ -255,7 +257,7 @@ a5efb89fd6784b3d300d332032c2d6e7 *tests/testthat/test-flex.test-ref.R
 0262586ebdcbd1c3ddd2486bb15b0cab *tests/testthat/test-lints.R
 0a79b95f2da4df1ee3c389421e4caf47 *tests/testthat/test-mlf.test-ref.R
 93a33db32e8108e336fe0a8bf97c3425 *tests/testthat/test-mlink.test-ref.R
-2be32fe023b72908ed855e39e3db1211 *tests/testthat/test-optimal_ubpop.R
+3bd2482e997df46a4e044d4fb28fc93d *tests/testthat/test-optimal_ubpop.R
 f24f5c667f5b074c62cede68a3c0b1d2 *tests/testthat/test-rflex.test-binomial.R
 f15eff548f7cd54a2de2cc50b36e9663 *tests/testthat/test-rflex.test-poisson.R
 66c53f586d443f9fc946911b9c21e5d2 *tests/testthat/test-rflex.test-ref.R
@@ -263,7 +265,6 @@ f15eff548f7cd54a2de2cc50b36e9663 *tests/testthat/test-rflex.test-poisson.R
 f4e17651ca209e21ee912e1c6187deb3 *tests/testthat/test-scan.test.R
 b79a0268b85d78b6f0812e0db0963b58 *tests/testthat/test-scan_sim.R
 88714eef516ce215f4c2f63fd0634454 *tests/testthat/test-scan_stat.R
-15580df4a7b46bd06e9d941dbfd40487 *tests/testthat/test-seq_scan_test.R
 62929f45ec0ee75a7350f38ee666cde6 *tests/testthat/test-tango.test.R
 d5d35cb228ceb074bf6d19f65e3b55f4 *tests/testthat/test-uls.test-ref.R
 335fde69a03d48b57825a588a9e8aa29 *tests/testthat/test-uls_zones.R

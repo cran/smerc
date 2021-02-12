@@ -18,17 +18,17 @@ simdist = "multinomial"
 
 set.seed(28) # necessary seed
 pruned_seq_test = seq_scan_test(coords = coords,
-                           cases = cases, pop = pop,
-                           ex = ex,
-                           nsim = nsim, alpha = alpha,
-                           ubpop_seq = ubpop_seq,
-                           longlat = longlat, cl = cl,
-                           type = type,
-                           min.cases = min.cases,
-                           simdist = simdist)
+                                cases = cases, pop = pop,
+                                ex = ex,
+                                nsim = nsim, alpha = alpha,
+                                ubpop_seq = ubpop_seq,
+                                longlat = longlat, cl = cl,
+                                type = type,
+                                min.cases = min.cases,
+                                simdist = simdist)
 
 
 context("check seq_scan_test with reference")
 test_that("seq_scan_test matches ref", {
-    expect_equal(pruned_seq_test, pruned_seq)
+  expect_equal(pruned_seq_test, pruned_seq)
 })
