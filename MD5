@@ -1,6 +1,6 @@
-6ac48a73e9a73b667d97a89c8b8bd190 *DESCRIPTION
-0efc43f111b632ce8ef500f171f78f84 *NAMESPACE
-aa7f3f8e0428a73099b09df28732fcf5 *NEWS
+b05bba65d6df6a27be1ce7ade0a7c9fe *DESCRIPTION
+7a4bdc29ae93a3873eb8dd12b31b4931 *NAMESPACE
+799c4e703efda91cfe2a81adb08ee8c1 *NEWS
 c78462b931843457925f69ab7b6682c1 *R/RcppExports.R
 eb8a3d754b30121b0274aeddfe2e42c6 *R/arg_check_functions.R
 8734ce64a60184e66c5632730a66b4a3 *R/bn.test.R
@@ -8,6 +8,7 @@ e433f41de2530f7841f6f03b94fdbf2f *R/bn.zones.R
 9a859690c25f7c00df6975932fcc0c06 *R/cepp.sim.R
 f5d834736f7dcd99e1addae7d74f35cf *R/cepp.test.R
 092c12692e8e6c75e72392fea7c74416 *R/cepp.weights.R
+d50df5bfd1ac800f71c91bdbe2e6bf5f *R/clusters.R
 ba1a42cb0eb1db089eecd53285a92810 *R/color.clusters.R
 cd30bd89b78eed231c659c32bbfc8547 *R/combine.zones.R
 0649b337f2719aa9fcb1fb72d8764cd1 *R/csg2.R
@@ -65,7 +66,7 @@ a983f93140f55534d42e051641c91378 *R/preamble.R
 3555e3cb736e05a4b55d8584da369341 *R/rflex_zones.R
 4291afd8887719adf3ca97c9280a3397 *R/scan.sim.R
 25f0c106e1bd81f9180619f114479f2a *R/scan.stat.R
-87ad8af8f943a3188759ba37ac8ec236 *R/scan.test.R
+a169cf679188b4d99dc4ebdcd43a9273 *R/scan.test.R
 9ca9a808b0c5729125e4ce344d00f3cf *R/scan.zones.R
 845702414d092acd8b2b2960ab5073f9 *R/scan_stat.R
 5fdd3759887dc6124d5e4cf588d97bc7 *R/seq_scan_sim.R
@@ -85,13 +86,13 @@ c3c473d8cbfb4a665288e7074cce836c *R/tango.test.R
 11f22e6f74e96b817df71be2db8183a8 *R/uls.test.R
 0f8d5ee18180ab661fb39536b5ebf48f *R/uls.zones.R
 c18f82915558edc0263060b5ceb5b743 *R/zones.sum.R
-65e34f550b28116400e1176abc339bd6 *build/vignette.rds
+a317c89a9137d4a72cc9de57cc9f161b *build/vignette.rds
 50dfe003d18a0d9c135b07c4874fb4c1 *data/nydf.rda
 b204e347d0dc7f674e88bd4b8392e190 *data/nypoly.rda
 316ab9d9fc998a4a671660dffcdae251 *data/nyw.rda
-325f743c9abca91624e5bd4e4d26797f *inst/doc/smerc_demo.R
-1717bd49671924f2363989cd4f3fc993 *inst/doc/smerc_demo.Rmd
-dc3c00236a72e35f4aa9484fc872457e *inst/doc/smerc_demo.html
+8fc32dcf4ad9e0f7d0cd7c69e660df1c *inst/doc/smerc_demo.R
+d2ac0932e64eff25aa81643ab950fefc *inst/doc/smerc_demo.Rmd
+5351ef628059bcdab2fc47dc90fc73f3 *inst/doc/smerc_demo.html
 15ceee73fe1f8d91e11b7f6e3081b3cf *inst/randomTests/test-optimal_ubpop-randomTests.R
 c6a88b9e527405e719db077d089c736f *inst/randomTests/test-seq_scan_test-randomTests.R
 2db0de8f456122b326706db69a400e3d *inst/testdata-raw/create_bn_test_ref_rda.R
@@ -119,6 +120,7 @@ fe66f1e78ac70f3a052b62e34c9367c9 *man/bn.zones.Rd
 7a9e8eea102cf12638ac3ca2ca017724 *man/cepp.sim.Rd
 94ac3dd2f0142a3cf2c182950a2927cf *man/cepp.test.Rd
 d86d93cee088a5c5ee8dc52acd052ac8 *man/cepp.weights.Rd
+5ac7b8afad3a6e591a8fc00441c707b8 *man/clusters.Rd
 b7aa301bfb7939c7ac347cafb11d2bbc *man/color.clusters.Rd
 a6440ab1399983d6fbe125c797197237 *man/combine.zones.Rd
 318ea4b135c05ee7f9709e95b3e68214 *man/csg.Rd
@@ -181,7 +183,7 @@ f67918393fe83720ccfd6944211234cb *man/rflex.test.Rd
 eb2de5f4f2755129fa60b00139b63da3 *man/scan.nn.Rd
 81dc67699bfb87831d37dae01b5f9f1c *man/scan.sim.Rd
 55ad05bbd862098515504d14669695ee *man/scan.stat.Rd
-9a2532565cd6b6cdb88efd5c1f60e532 *man/scan.test.Rd
+2818b5790f4ae39a80f41e6447190635 *man/scan.test.Rd
 6a3061ded1e495787f7e55c0f9e4dda7 *man/scan.zones.Rd
 de3538ca1d5479bf36084a92abf2ced8 *man/scan_stat.Rd
 7906a7586014d13cc71229e9677bfd39 *man/seq_scan_sim.Rd
@@ -198,7 +200,7 @@ e211a01a1f74e581f72e63bbdb03590a *man/tango.weights.Rd
 11ced082515cad72f9d42c612892fe5c *man/uls.zones.Rd
 97ca15d1b51604b59d1c2e3d7cd4c27c *man/w2segments.Rd
 1d9dc49298f24201c0225c573ff5a06d *man/zones.sum.Rd
-7943d35493198f2c1906c000956a6baa *src/RcppExports.cpp
+2ced38b507abe831e495f40dbd264725 *src/RcppExports.cpp
 c2b320ea7240d5b5a0e571d4d440bac8 *src/noc_cpp.cpp
 d1b1dbc0a9c8dcada0dd6af86480ac18 *src/scsg2_cpp.cpp
 20345a5c4bd6878a752e7982b20774f2 *tests/flex_binomial.out
@@ -268,4 +270,4 @@ b79a0268b85d78b6f0812e0db0963b58 *tests/testthat/test-scan_sim.R
 62929f45ec0ee75a7350f38ee666cde6 *tests/testthat/test-tango.test.R
 d5d35cb228ceb074bf6d19f65e3b55f4 *tests/testthat/test-uls.test-ref.R
 335fde69a03d48b57825a588a9e8aa29 *tests/testthat/test-uls_zones.R
-1717bd49671924f2363989cd4f3fc993 *vignettes/smerc_demo.Rmd
+d2ac0932e64eff25aa81643ab950fefc *vignettes/smerc_demo.Rmd

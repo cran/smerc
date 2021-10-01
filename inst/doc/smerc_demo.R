@@ -30,6 +30,9 @@ summary(scan_out) # summarize scan.test results
 plot(scan_out) # basic plot of scan.test results
 
 ## -----------------------------------------------------------------------------
+clusters(scan_out)
+
+## -----------------------------------------------------------------------------
 plot(nypoly, col = color.clusters(scan_out)) #nicer plot of scan.test results
 
 ## -----------------------------------------------------------------------------
