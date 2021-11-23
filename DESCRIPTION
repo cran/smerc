@@ -1,7 +1,7 @@
 Package: smerc
 Type: Package
 Title: Statistical Methods for Regional Counts
-Version: 1.5
+Version: 1.5.2
 Authors@R: 
     c(person(given = "Joshua",
             family = "French",
@@ -15,7 +15,10 @@ Authors@R:
 Maintainer: Joshua French <joshua.french@ucdenver.edu>
 BugReports: https://github.com/jfrench/smerc/issues
 Description: Implements statistical methods for analyzing the counts of areal data,
-    with a focus on the detection of spatial clusters and clustering.  The package has a heavy emphasis on spatial scan methods, which were first introduced by Kulldorff and Nagarwalla (1995) <doi:10.1002/sim.4780140809> and Kulldorff (1997) <doi:10.1080/03610929708831995>.
+    with a focus on the detection of spatial clusters and clustering.  The package
+    has a heavy emphasis on spatial scan methods, which were first introduced
+    by Kulldorff and Nagarwalla (1995) <doi:10.1002/sim.4780140809> and
+    Kulldorff (1997) <doi:10.1080/03610929708831995>.
 License: GPL (>= 2)
 LazyLoad: yes
 Depends: R (>= 3.6)
@@ -26,8 +29,8 @@ RoxygenNote: 7.1.2
 VignetteBuilder: knitr
 LinkingTo: Rcpp, RcppProgress
 NeedsCompilation: yes
-Packaged: 2021-09-30 22:18:50 UTC; frencjos
+Packaged: 2021-11-23 14:33:14 UTC; frencjos
 Author: Joshua French [aut, cre] (<https://orcid.org/0000-0002-9708-3353>),
   Mohammad Meysami [ctb] (<https://orcid.org/0000-0002-3322-5244>)
 Repository: CRAN
-Date/Publication: 2021-10-01 16:50:02 UTC
+Date/Publication: 2021-11-23 16:10:02 UTC
