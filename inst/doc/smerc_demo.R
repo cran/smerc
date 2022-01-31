@@ -20,7 +20,7 @@ scan_out = scan.test(coords, cases, pop, nsim = 99) # perform scan test
 ## -----------------------------------------------------------------------------
 class(scan_out)
 
-## -----------------------------------------------------------------------------
+## ---- collapse=TRUE-----------------------------------------------------------
 scan_out # print scan.test results
 
 ## -----------------------------------------------------------------------------
@@ -35,14 +35,14 @@ clusters(scan_out)
 ## -----------------------------------------------------------------------------
 plot(nypoly, col = color.clusters(scan_out)) #nicer plot of scan.test results
 
-## -----------------------------------------------------------------------------
+## ---- collapse=TRUE-----------------------------------------------------------
 bn_out = bn.test(coords = coords, cases = cases, pop = pop, cstar = 20,
                  alpha = 0.01) # perform besag-newell test
 bn_out # print results
 summary(bn_out) # summarize results
 plot(bn_out) # plot results
 
-## -----------------------------------------------------------------------------
+## ---- collapse=TRUE-----------------------------------------------------------
 # perform CEPP test
 cepp_out = cepp.test(coords = coords, cases = cases, pop = pop,
                      nstar = 5000, nsim = 99, alpha = 0.1)
@@ -50,7 +50,7 @@ cepp_out # print results
 summary(cepp_out) # summarize results
 plot(cepp_out) # plot results
 
-## -----------------------------------------------------------------------------
+## ---- collapse=TRUE-----------------------------------------------------------
 w = dweights(coords, kappa = 1) # construct weights matrix
 tango_out = tango.test(cases, pop, w, nsim = 49) # perform tango's test
 tango_out # print results
