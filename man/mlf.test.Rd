@@ -60,6 +60,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 }
 \value{
@@ -113,9 +115,7 @@ out <- mlf.test(
   alpha = 0.12, longlat = TRUE,
   nsim = 10, ubpop = 0.1, ubd = 0.5
 )
-data(nypoly)
-library(sp)
-plot(nypoly, col = color.clusters(out))
+plot(out)
 }
 \references{
 Yao, Z., Tang, J., & Zhan, F. B. (2011).

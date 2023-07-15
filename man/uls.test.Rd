@@ -56,6 +56,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 
 \item{type}{The type of scan statistic to compute. The
@@ -115,9 +117,11 @@ out <- uls.test(
   alpha = 0.05, longlat = TRUE,
   nsim = 9, ubpop = 0.5
 )
-data(nypoly)
-library(sp)
-plot(nypoly, col = color.clusters(out))
+# better plotting
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf), col = color.clusters(out))
+}
 }
 \references{
 Patil, G.P. & Taillie, C. Upper level set

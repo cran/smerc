@@ -63,6 +63,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 }
 \value{
@@ -107,9 +109,11 @@ out <- rflex.test(
   alpha = 0.05, longlat = TRUE
 )
 
-data(nypoly)
-library(sp)
-plot(nypoly, col = color.clusters(out))
+# better plotting
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf), col = color.clusters(out))
+}
 }
 \references{
 Tango, T. and Takahashi, K. (2012), A

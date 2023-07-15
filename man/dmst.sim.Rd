@@ -33,12 +33,11 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 }
 \value{
-A vector with the maximum test statistic for each
-  simulated data set.
-
 A vector with the maximum test statistic for each
   simulated data set.
 }
@@ -57,7 +56,7 @@ cases <- floor(nydf$cases)
 pop <- nydf$pop
 ty <- sum(cases)
 ex <- ty / sum(pop) * pop
-d <- sp::spDists(coords, longlat = TRUE)
+d <- gedist(coords, longlat = TRUE)
 nn <- nndist(d, ubd = 0.05)
 max_pop <- sum(pop) * 0.25
 tsim <- dmst.sim(1, nn, ty, ex, nyw,

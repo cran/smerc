@@ -65,9 +65,10 @@ rzones4b <- suppressMessages(rflex_zones(nn,
   w = nyw, cases = floor(cases), ex = ex,
   loop = TRUE, verbose = TRUE
 ))
-
-lprimes <- log(randtoolbox::get.primes(length(nn)))
-# lprimes = log(randtoolbox::get.primes(length(nn * 10)))
+# load(system.file("R/sysdata.rda", package = "smerc"))
+primes100k <- get0("primes100k",
+                   envir = asNamespace("smerc"))
+lprimes <- log(primes100k[seq_along(nn)])
 # compare list of zones with possibly different orderings
 zcompare <- function(z1, z2, lprimes) {
   s1 <- sapply(z1, function(x) sum(lprimes[x]))

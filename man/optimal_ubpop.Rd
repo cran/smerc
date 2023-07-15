@@ -53,6 +53,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 
 \item{type}{The type of scan statistic to compute. The
@@ -87,7 +89,7 @@ coords <- with(nydf, cbind(longitude, latitude))
 ubpop_stats <- optimal_ubpop(
   coords = coords, cases = nydf$cases,
   pop = nydf$pop, nsim = 49,
-  ubpop = seq(0.05, 0.5, by = 0.05)
+  ubpop_seq = seq(0.05, 0.5, by = 0.05)
 )
 ubpop_stats
 \dontrun{

@@ -69,9 +69,11 @@ out <- bn.test(
 )
 plot(out)
 
-data(nypoly)
-library(sp)
-plot(nypoly, col = color.clusters(out))
+# better plotting
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf), col = color.clusters(out))
+}
 }
 \references{
 Besag, J. and Newell, J.  (1991). The

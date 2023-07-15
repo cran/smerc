@@ -25,3 +25,13 @@ Add ex argument to bn.test.
 # 1.7
 - Improve efficiency of scan.test and elliptic.test by removing redundancies.
 - Replace NEWS file with NEWS.md file
+- Fix bug in scan.test when the population size of each region is identical. 
+- Add nysf and nysp data sets, along with better descriptions.
+# 1.8
+- Add neast.
+- Add gedist function to remove dependency on sp package.
+- Add primes100k data set to sysdata.rda to remove dependency on randtoolbox package.
+- Add nclusters function.
+- Remove nysf and nypoly rda files from data. Replace with 
+functions that create them from nysf. This is related to the point below.
+- Remove sp from Depends and move to Suggests.

@@ -62,6 +62,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 
 \item{lonlat}{Deprecated in favor of \code{longlat}.}
@@ -96,9 +98,11 @@ out <- flex_test(
   alpha = 0.12, longlat = TRUE
 )
 
-data(nypoly)
-library(sp)
-# plot(nypoly, col = color.clusters(out))
+# better plotting
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf), col = color.clusters(out))
+}
 }
 \references{
 Tango, T., & Takahashi, K. (2005). A flexibly

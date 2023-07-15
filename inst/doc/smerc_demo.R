@@ -7,9 +7,9 @@ data(nydf) # load data
 str(nydf) # look at structure
 
 ## -----------------------------------------------------------------------------
-data(nypoly) # load nypoly data
-library(sp) # load sp package for plotting
-plot(nypoly) # plot SpatialPolygonsDataFrame
+data(nysf) # load nysf data
+library(sf) # load sf package for plotting
+plot(st_geometry(nysf)) # plot study area
 
 ## -----------------------------------------------------------------------------
 coords = nydf[,c("x", "y")] # extract coordinates
@@ -33,7 +33,7 @@ plot(scan_out) # basic plot of scan.test results
 clusters(scan_out)
 
 ## -----------------------------------------------------------------------------
-plot(nypoly, col = color.clusters(scan_out)) #nicer plot of scan.test results
+plot(st_geometry(nysf), col = color.clusters(scan_out)) #nicer plot of scan.test results
 
 ## ---- collapse=TRUE-----------------------------------------------------------
 bn_out = bn.test(coords = coords, cases = cases, pop = pop, cstar = 20,

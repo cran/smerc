@@ -16,7 +16,7 @@
 #'
 #' The maximum intercentroid distance can be found by
 #' executing the command:
-#' \code{sp::spDists(as.matrix(coords), longlat = longlat)},
+#' \code{gedist(as.matrix(coords), longlat = longlat)},
 #' based on the specified values of \code{coords} and
 #' \code{longlat}.
 #'
@@ -47,9 +47,11 @@
 #'   alpha = 0.12, longlat = TRUE,
 #'   nsim = 2, ubpop = 0.05, ubd = 0.1
 #' )
-#' data(nypoly)
-#' library(sp)
-#' plot(nypoly, col = color.clusters(out))
+#' # better plotting
+#' if (require("sf", quietly = TRUE)) {
+#'    data(nysf)
+#'    plot(st_geometry(nysf), col = color.clusters(out))
+#' }
 dmst.test <- function(coords, cases, pop, w,
                       ex = sum(cases) / sum(pop) * pop,
                       nsim = 499, alpha = 0.1, ubpop = 0.5,
@@ -65,7 +67,7 @@ dmst.test <- function(coords, cases, pop, w,
   ty <- sum(cases) # sum of all cases
 
   # intercentroid distances
-  d <- sp::spDists(as.matrix(coords), longlat = TRUE)
+  d <- gedist(as.matrix(coords), longlat = TRUE)
   # upperbound for distance between centroids in zone
   max_pop <- ubpop * sum(pop)
   # find all neighbors from each starting zone within distance upperbound

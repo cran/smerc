@@ -53,6 +53,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 
 \item{type}{The type of scan statistic to compute. The
@@ -82,7 +84,6 @@ the most likely cluster is returned (along with a
 warning).
 }
 \examples{
-#' @examples
 data(nydf)
 coords <- with(nydf, cbind(longitude, latitude))
 out <- scan.test(
@@ -90,15 +91,30 @@ out <- scan.test(
   pop = nydf$pop, nsim = 0,
   alpha = 1, longlat = TRUE
 )
+
+# basic plot
+plot(out, idx = 1:3)
+
+# better plot
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf),
+        col = color.clusters(out, idx = 1:3))
+}
+
 ## plot output for new york state
 # specify desired argument values
 mapargs <- list(
   database = "county", region = "new york",
-  xlim = range(out$coords[, 1]), ylim = range(out$coords[, 2])
+  xlim = range(out$coords[, 1]),
+  ylim = range(out$coords[, 2])
 )
+# only run this example if maps available
+if (require("maps", quietly = TRUE)) {
 # needed for "state" database (unless you execute library(maps))
 data(countyMapEnv, package = "maps")
 plot(out, usemap = TRUE, mapargs = mapargs, idx = 1:3)
+}
 # extract detected clusteers
 clusters(out)
 

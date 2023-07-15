@@ -49,12 +49,11 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 }
 \value{
-A vector with the maximum test statistic for each
-  simulated data set.
-
 A vector with the maximum test statistic for each
   simulated data set.
 }

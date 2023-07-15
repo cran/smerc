@@ -64,9 +64,7 @@
 #'   alpha = 0.12, longlat = TRUE,
 #'   nsim = 10, ubpop = 0.1, ubd = 0.5
 #' )
-#' data(nypoly)
-#' library(sp)
-#' plot(nypoly, col = color.clusters(out))
+#' plot(out)
 mlf.test <- function(coords, cases, pop, w,
                      ex = sum(cases) / sum(pop) * pop,
                      nsim = 499, alpha = 0.1,
@@ -91,7 +89,7 @@ mlf.test <- function(coords, cases, pop, w,
   start <- which.max(tobs)
 
   # intercentroid distances
-  d <- sp::spDists(coords, longlat = longlat)
+  d <- gedist(coords, longlat = longlat)
 
   # upperbound for population in zone
   max_pop <- ubpop * sum(pop)

@@ -40,9 +40,11 @@
 #' plot(out)
 #' summary(out)
 #'
-#' data(nypoly)
-#' library(sp)
-#' plot(nypoly, col = color.clusters(out))
+#' # better plotting
+#' if (require("sf", quietly = TRUE)) {
+#'    data(nysf)
+#'    plot(st_geometry(nysf), col = color.clusters(out))
+#' }
 cepp.test <- function(coords, cases, pop, nstar,
                       ex = sum(cases) / sum(pop) * pop,
                       nsim = 499, alpha = 0.10,
@@ -59,7 +61,7 @@ cepp.test <- function(coords, cases, pop, nstar,
   coords <- as.matrix(coords)
 
   # intercentroid distances
-  d <- sp::spDists(coords, longlat = longlat)
+  d <- gedist(coords, longlat = longlat)
 
   # find smallest windows with at least n* pop
   nn <- casewin(d, pop, nstar)

@@ -72,9 +72,11 @@ out <- cepp.test(
 plot(out)
 summary(out)
 
-data(nypoly)
-library(sp)
-plot(nypoly, col = color.clusters(out))
+# better plotting
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf), col = color.clusters(out))
+}
 }
 \references{
 Bruce W. Turnbull, Eric J. Iwano, William S. Burnett,

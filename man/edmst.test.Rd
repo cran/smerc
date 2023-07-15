@@ -61,6 +61,8 @@ A cluster object created by \code{\link{makeCluster}},
 or an integer to indicate number of child-processes
 (integer values are ignored on Windows) for parallel evaluations
 (see Details on performance).
+It can also be \code{"future"} to use a future backend (see Details),
+\code{NULL} (default) refers to sequential evaluation.
 }
 }
 \value{
@@ -86,7 +88,7 @@ returned (along with a warning).
 \details{
 The maximum intercentroid distance can be found by
 executing the command:
-\code{sp::spDists(as.matrix(coords), longlat = longlat)},
+\code{gedist(as.matrix(coords), longlat = longlat)},
 based on the specified values of \code{coords} and
 \code{longlat}.
 }
@@ -100,9 +102,11 @@ out <- edmst.test(
   alpha = 0.12, longlat = TRUE,
   nsim = 5, ubpop = 0.1, ubd = 0.2
 )
-data(nypoly)
-library(sp)
-plot(nypoly, col = color.clusters(out))
+# better plotting
+if (require("sf", quietly = TRUE)) {
+   data(nysf)
+   plot(st_geometry(nysf), col = color.clusters(out))
+}
 }
 \references{
 Costa, M.A. and Assuncao, R.M. and Kulldorff,

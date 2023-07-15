@@ -36,9 +36,11 @@
 #' )
 #' plot(out)
 #'
-#' data(nypoly)
-#' library(sp)
-#' plot(nypoly, col = color.clusters(out))
+#' # better plotting
+#' if (require("sf", quietly = TRUE)) {
+#'    data(nysf)
+#'    plot(st_geometry(nysf), col = color.clusters(out))
+#' }
 bn.test <- function(coords, cases, pop, cstar,
                     ex = sum(cases) / sum(pop) * pop,
                     alpha = 0.10,
@@ -54,7 +56,7 @@ bn.test <- function(coords, cases, pop, cstar,
 
   coords <- as.matrix(coords)
   # intercentroid distances
-  d <- sp::spDists(coords, longlat = longlat)
+  d <- gedist(coords, longlat = longlat)
 
   # find smallest windows with at least c* cases
   cwins <- casewin(d, cases, cstar)
