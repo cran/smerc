@@ -1,7 +1,7 @@
 Package: smerc
 Type: Package
 Title: Statistical Methods for Regional Counts
-Version: 1.8.2
+Version: 1.8.3
 Authors@R: 
     c(person(given = "Joshua",
             family = "French",
@@ -26,8 +26,8 @@ RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 LinkingTo: Rcpp, RcppProgress
 NeedsCompilation: yes
-Packaged: 2023-07-15 18:56:52 UTC; frencjos
+Packaged: 2023-10-08 21:06:23 UTC; frencjos
 Author: Joshua French [aut, cre] (<https://orcid.org/0000-0002-9708-3353>),
   Mohammad Meysami [ctb] (<https://orcid.org/0000-0002-3322-5244>)
 Repository: CRAN
-Date/Publication: 2023-07-15 19:30:02 UTC
+Date/Publication: 2023-10-10 14:50:02 UTC

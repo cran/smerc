@@ -1,4 +1,4 @@
-731f2fcb7164cb9b83c46e8d644a25bf *DESCRIPTION
+d3a91efbb116686c39bbd8897798ae2a *DESCRIPTION
 ac034f5c407720f4679bd3e3fe3cb69f *NAMESPACE
 b90a716dc2fce0198a8b18af9f5fef99 *NEWS.md
 398dd1b48ffeff26b1e1a439d5032dec *R/RcppExports.R
@@ -91,7 +91,7 @@ dd2244e633c999ae040f0527609b897f *R/seq_scan_sim.R
 12c2d2f52a3275593ed5de61f0915537 *R/seq_scan_test.R
 7d2ef70b002a7c6a31630e8797fce45b *R/sig_noc.R
 bb728c39c7553352be41487422beace5 *R/sig_prune.R
-34de1045c59439dbcb5982702528be1d *R/smerc-package.R
+2e63734a036014312671122d6f3fbe71 *R/smerc-package.R
 90dac3b1b413c72d7125c188dcfbec1f *R/smerc_cluster-plot.R
 e63fb7781571080a3f0066fee3adcf2a *R/smerc_cluster-print.R
 4b2b499172e5adca32f6b75533da965a *R/smerc_cluster-summary.R
@@ -119,7 +119,7 @@ cdad9a30c06bb1b83efaa773131434ce *data/neast.rda
 a7b4191b9162a6ae777b3d58fc95b6c8 *data/nyw.rda
 a57e799ec88ef35771d31a51a07178a6 *inst/doc/smerc_demo.R
 74e1b705f88d2ea846284976d0bd7bea *inst/doc/smerc_demo.Rmd
-ef278d64c76d68fde53b1847cb4289da *inst/doc/smerc_demo.html
+ee59ee4e312c4677b0aec8e53e47cff4 *inst/doc/smerc_demo.html
 b94d3555fb61a1086a102dd36f1a5a5d *inst/randomTests/test-optimal_ubpop-randomTests.R
 c6a88b9e527405e719db077d089c736f *inst/randomTests/test-seq_scan_test-randomTests.R
 985ebcd27169701d2c9e5762fb2d09c4 *inst/testdata-raw/create_bn_test_ref_rda.R
@@ -234,7 +234,7 @@ cca864f890ef78e83be3e868116d8315 *man/scan_stat.Rd
 8b079183656000b8d7126c7967be5e04 *man/seq_scan_test.Rd
 d556b03338d7c8e0ea15c8c06cec343b *man/sig_noc.Rd
 4f9ec78746890b327edaf20e0be6fc4b *man/sig_prune.Rd
-3fa444907206bf9dfea2434a380c69b2 *man/smerc.Rd
+01af4bca987312172eaf4758969c0633 *man/smerc.Rd
 5a905ac85c8c5af8140f7be0e869a560 *man/smerc_cluster.Rd
 7dd75bb6a0d7481f5bdfbd27e24bc0f6 *man/stat.poisson.adj.Rd
 63970c035497af42b106e01c0297531c *man/summary.smerc_cluster.Rd
@@ -298,7 +298,7 @@ c2547e85741a568751f623d05957fe92 *tests/testthat/test-elliptical.test-a0.R
 f121edd47d8ed2b5472c17ce7375110e *tests/testthat/test-elliptical.test-a1.R
 d7d1f7ec9ea264d0dbd5fd7c1f762e00 *tests/testthat/test-elliptical.test-ahalf.R
 31ae356ce42afcb3825981e4612ea051 *tests/testthat/test-fast.test-ref.R
-1b2ae9a368bff4aa45c515885ce0178c *tests/testthat/test-flex-rflex-zones.R
+d287c7af0c1bf70fdc02690c4f88b2f1 *tests/testthat/test-flex-rflex-zones.R
 573c47b494df083d65bd5374f9e27f65 *tests/testthat/test-flex-zones-ref.R
 84a1df5666e44332e213942f925eddf0 *tests/testthat/test-flex.test-binomial.R
 ba368fef30bc74f1738ffb611ce23dfc *tests/testthat/test-flex.test-poisson.R
