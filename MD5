@@ -1,4 +1,4 @@
-d3a91efbb116686c39bbd8897798ae2a *DESCRIPTION
+72e60832e134d1706538c2f5869cbd5c *DESCRIPTION
 ac034f5c407720f4679bd3e3fe3cb69f *NAMESPACE
 b90a716dc2fce0198a8b18af9f5fef99 *NEWS.md
 398dd1b48ffeff26b1e1a439d5032dec *R/RcppExports.R
@@ -62,8 +62,8 @@ b8e2c7e8c82f32aab2ce802381808fdc *R/nn.cumsum.R
 68bed2ab7611be8220ea642803e0dc9c *R/nndist.R
 fc51fa28c82c7cfcd284a9c0686e442f *R/nndup.R
 0845b5b9d7960936492aa0e6efd98040 *R/nnpop.R
-91d8cc6da650802e107d73d966198726 *R/noc_enn.R
-de22d8379a65a6e2b18d4743c8e48984 *R/noc_nn.R
+9ecbd8c0ac8aa413261bf6c46c5e36f9 *R/noc_enn.R
+922a4000460767d96fc0ac77d73624aa *R/noc_nn.R
 b89237710fe827828d4593c829ef6bc8 *R/noz.R
 840689418d03b6413f21f343389dbead *R/nydf.R
 1e604f36f897865e00a82c4a2a832b22 *R/nypoly.R
@@ -84,7 +84,7 @@ f7678aa1fd21c2f5471c53556d796a79 *R/rflex_zones.R
 1137f919a191f57494a2aa4c2dd9768a *R/scan.sim.adj.R
 9668ce18f04f0ffc0d4c54b053f73d68 *R/scan.sim.old.R
 01f843ff6bf4d679ecac656e04f14216 *R/scan.stat.R
-9c8317b5883eff0f2e1d1586ce006cc2 *R/scan.test2.R
+231440ba94f70c80db70a7af9d3a23df *R/scan.test2.R
 b27c9c7ad14f6e0254cfa8aa8c38d6b4 *R/scan.zones.R
 fe8cb75a7404e31b2b68985fa5274139 *R/scan_stat.R
 dd2244e633c999ae040f0527609b897f *R/seq_scan_sim.R
@@ -94,7 +94,7 @@ bb728c39c7553352be41487422beace5 *R/sig_prune.R
 2e63734a036014312671122d6f3fbe71 *R/smerc-package.R
 90dac3b1b413c72d7125c188dcfbec1f *R/smerc_cluster-plot.R
 e63fb7781571080a3f0066fee3adcf2a *R/smerc_cluster-print.R
-4b2b499172e5adca32f6b75533da965a *R/smerc_cluster-summary.R
+7cd909f34796478392f08cecc7832948 *R/smerc_cluster-summary.R
 c814f265ef79ccb6c16890332006d7bd *R/smerc_cluster.R
 72bb1d67d00ce42aab4390ec591fb8c8 *R/smerc_similarity_test-print.R
 8963673a8a8903f8b546e882a24706e7 *R/stat.poisson.adj.R
@@ -108,8 +108,8 @@ a7c937627879d94f4b6c3cf2f0d8ba31 *R/tango.stat.R
 2dd2ad37b4cd9dbe9dd482a8131e40e4 *R/uls.test.R
 54a86a6d2a295ea0c0d20dbcd54e22da *R/uls.zones.R
 0321cf031c5346a345a6bb888a1eaddb *R/zones.sum.R
-2836b2c5db38c9819380bd093383d89d *build/partial.rdb
-078f0acb29aa43abfb0fd2d86f91eae1 *build/vignette.rds
+b54db8794555342c4feee5fe0b1b8f5b *build/partial.rdb
+a208f652fe331ec4c66f63c29a526fd8 *build/vignette.rds
 cdad9a30c06bb1b83efaa773131434ce *data/neast.rda
 7fb98cf0dfe54112a058886d9c286005 *data/neastw.rda
 91a7b00d0fe20f434bb7bc25c3883ec2 *data/nydf.rda
@@ -117,9 +117,9 @@ cdad9a30c06bb1b83efaa773131434ce *data/neast.rda
 8116c7e97fb76c41b576e8f7decc17b6 *data/nysf.rda
 4ea16ae6dab673eece75ba7e4b1795e2 *data/nysp.R
 a7b4191b9162a6ae777b3d58fc95b6c8 *data/nyw.rda
-a57e799ec88ef35771d31a51a07178a6 *inst/doc/smerc_demo.R
+bf6d1e659e025704cb3f1bba9f621130 *inst/doc/smerc_demo.R
 74e1b705f88d2ea846284976d0bd7bea *inst/doc/smerc_demo.Rmd
-ee59ee4e312c4677b0aec8e53e47cff4 *inst/doc/smerc_demo.html
+f1030ac7887b9bdd684a041b75278fce *inst/doc/smerc_demo.html
 b94d3555fb61a1086a102dd36f1a5a5d *inst/randomTests/test-optimal_ubpop-randomTests.R
 c6a88b9e527405e719db077d089c736f *inst/randomTests/test-seq_scan_test-randomTests.R
 985ebcd27169701d2c9e5762fb2d09c4 *inst/testdata-raw/create_bn_test_ref_rda.R
@@ -179,7 +179,7 @@ a02225ada7dbfaeac9aaa61fb0d1c42e *man/flex.test.Rd
 0ac74a71f14ba0f38c67e9f5376203dc *man/flex_zones.Rd
 575dd25da08b9ea9ab752e069037733a *man/gedist.Rd
 f80f69558e72febfed8826af018eb7c2 *man/knn.Rd
-67ed444bc89ec04aec5df64659ae80a9 *man/lget.Rd
+b2835a54136b791cdcef9f11252805ff *man/lget.Rd
 8c6d978538c153c47dcaaf9692d0bbfe *man/logical2zones.Rd
 ec463b270d0aaab93f857ff9fd0e5359 *man/mc.pvalue.Rd
 ef3eb2e68daa75e7cbb5304d0127af76 *man/mlf.test.Rd
@@ -234,10 +234,10 @@ cca864f890ef78e83be3e868116d8315 *man/scan_stat.Rd
 8b079183656000b8d7126c7967be5e04 *man/seq_scan_test.Rd
 d556b03338d7c8e0ea15c8c06cec343b *man/sig_noc.Rd
 4f9ec78746890b327edaf20e0be6fc4b *man/sig_prune.Rd
-01af4bca987312172eaf4758969c0633 *man/smerc.Rd
+30ce6adc296b46eade487b2e72e14c7e *man/smerc.Rd
 5a905ac85c8c5af8140f7be0e869a560 *man/smerc_cluster.Rd
 7dd75bb6a0d7481f5bdfbd27e24bc0f6 *man/stat.poisson.adj.Rd
-63970c035497af42b106e01c0297531c *man/summary.smerc_cluster.Rd
+b54e29de1052ba3b22196c2e56e24d0e *man/summary.smerc_cluster.Rd
 94d2bab5615f03f614508ba8766ce2ee *man/tango.stat.Rd
 7d1ed76ea1a927c935dd07b4def9c11a *man/tango.test.Rd
 899d84e588e768c6362f232681185362 *man/tango.weights.Rd
